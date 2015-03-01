@@ -108,7 +108,7 @@ endfunction
 
 function! w3m#ShowExternalBrowser()
   if exists('g:w3m#external_browser') && exists('b:last_url')
-    call s:system(g:w3m#external_browser . ' "' . b:last_url . '"')
+    call s:system(g:w3m#external_browser . '"' . b:last_url . '"')
   endif
 endfunction
 
